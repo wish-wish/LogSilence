@@ -27,6 +27,7 @@ if __name__ == '__main__':
     print "author cclin 2015.04"
     print "support:e-mail=12092020@qq.com"
     print "copyright 2015~2018 for anyone to use"
+    '''
     cmdcompile=os.path.split(os.path.realpath(__file__))[0]+r"/cocos2d/tools/cocos2d-console/bin/cocos.bat compile -p android -ap 10";
         
     #stdout=sys.stdout
@@ -35,8 +36,8 @@ if __name__ == '__main__':
     os.system("adb install-multiple -lr proj.android/bin/skydream-debug.apk");
     #os.system("pause")
     #os.system("dir")
-
-    #'''
+    '''
+    '''
     p=subprocess.Popen(cmdcompile,stdout=subprocess.PIPE,shell=False)
     #logs=p.communicate()
     #print logs;    
@@ -46,7 +47,7 @@ if __name__ == '__main__':
             print logline,
         time.sleep(1)    
     print "ret code=",p.returncode
-    #'''
+    '''
 
     #text_area,sys.stdout = sys.stdout,stdout
     #sys.stderr.write("abcd")
